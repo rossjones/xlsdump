@@ -1,0 +1,3 @@
+
+hbai.xls is sourced from https://londondatastore-upload.s3.amazonaws.com/NjE%3Ddata-for-HBAI-Update-2014.xls
+at http://data.london.gov.uk/dataset/hbai-poverty-in-london-2012-13/resource/2588cc67-47bf-4c1c-bdff-5dffa0ba92be
