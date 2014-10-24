@@ -36,8 +36,19 @@ int main(int argc, char*argv[]) {
         char *name = (char *)pWorkbook->sheets.sheet[i].name;
         char *filename = malloc(strlen(name)+5); // null and .csv
         sprintf(filename, "%s.csv", slugify(name));
-
         fprintf(stdout, "Sheet %d is called %s\n", i, filename);
+
+        pSheet = xls_getWorkSheet(pWorkbook, i);
+        xls_parseWorkSheet(pSheet);
+
+        for (int cellRow = 0; cellRow <= pSheet->rows.lastrow; cellRow++) {
+            for (int cellCol = 0; cellCol <= pSheet->rows.lastcol; cellCol++) {
+                xlsCell *cell = xls_cell(pSheet, cellRow, cellCol);
+
+
+            }
+        }
+
 
         free(filename);
     }
